@@ -19,7 +19,7 @@ const uploadOnCloudinary = async (localFilePath) => {
         return response
 
     } catch (error) {
-        fs.unlink(localFilePath) 
+        fs.unlink(localFilePath)
         // removed the locally saved temporary file as the ipload operation got failed
         return null
 
@@ -28,4 +28,4 @@ const uploadOnCloudinary = async (localFilePath) => {
 }
 
 
-export {uploadOnCloudinary};
+export { uploadOnCloudinary };
